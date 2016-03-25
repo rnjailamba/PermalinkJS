@@ -20,7 +20,14 @@
 			};
 		var className = 'anchor';
 		var idcache = {};
-		var count = 0;		
+		var count = 0;
+
+		function doDashes(str) {
+		    var re = /[^a-z0-9]+/gi; // global and case insensitive matching of non-char/non-numeric
+		    var re2 = /^-*|-*$/g;     // get rid of any leading/trailing dashes
+		    str = str.replace(re, '-');  // perform the 1st regexp
+		    return str.replace(re2, '').toLowerCase(); // ..aaand the second + return lowercased result
+		}				
 
 
 		function injectStyles() {
@@ -41,6 +48,17 @@
 		  'color: #3C4342;',
 		'}',
 		'',
+		'.octicon {',
+		 'visibility: hidden',
+		'}',
+		'h1:hover .octicon{',
+		 'visibility: visible',
+		'}',		
+		'path{',
+		'    fill:none;',
+		'    stroke:black;',
+		'    pointer-events:all;',
+		'}',
 		'.anchor:hover {',
 		 'color: #3C4342;',
 		'}',
@@ -51,12 +69,15 @@
 		'h3:hover .anchor span:before,',
 		'h4:hover .anchor span:before,',
 		'h5:hover .anchor span:before,',
-		'h6:hover .anchor span:before {',
+		'.anchor  {',
 		  'content: "¶";',
 		  'position: absolute;',
-		  'left: 0px;',
+		  'left: -15px;',
 		  'top: 0;',
-		'}'].join('').replace(/\.anchor/g, '.' + className);
+		'}'		
+
+
+		].join('').replace(/\.anchor/g, '.' + className);
 
 		var style = document.createElement('style');
 		style.innerHTML = css;
@@ -80,39 +101,25 @@
 			this.init(options,element);
 		}
 
-		// Avoid Plugin.prototype conflicts
 		$.extend( Plugin.prototype, {
 			init: function(options,element) {
 
-				// Place initialization logic here
-				// You already have access to the DOM element and
-				// the options via the instance, e.g
-				// you can add more functions like the one below and
-				// call them like the example . this.element
-				// and this.settingsbelow
 				this.addPermalinks(options,element);
 				this.yourOtherFunction( "jQuery Boilerplate" );
 			},
 			addPermalinks: function(options,element){
-				// console.log(element.children());
 				var anchor = document.createElement('a');
 			    anchor.className = className;
-			    anchor.innerHTML = '<span></span>';
-				console.log(anchor);
+			    anchor.innerHTML = '<svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg>';
 
 				var x = $('#element').children().each(function () {
-				    // alert(this.textContent); // "this" is the current element in the loop
-				    console.log(this.id);
 				    if (!this.id) {
-				    	// alert("id not thhere");
-						// let's make one
-						var id = (this.textContent||this.innerText).replace(/&.*?;/g, '').replace(/\s+/g, '-').replace(/[^\w\-]/g, '').toLowerCase();
+						var id = doDashes(this.textContent||this.innerText);
 						if (idcache[id]) {
 						  	id = id + '-' + count;
 						}
 						this.id = id;
 						idcache[id] = 1;
-						// alert(id);
 					}
 					var clone = anchor.cloneNode(true);
 					clone.href = '#' + this.id;
@@ -122,14 +129,14 @@
 				console.log($('#element').children());
 			},
 			yourOtherFunction: function( text ) {
-				injectStyles();
-			    if (window.location.hash && window.scrollY === 0) {
-				  // touching the location will cause the window to scroll
-				  window.location = window.location;
-				}
-				// some logic
-				// console.log(this.element);
-				// $( this.element ).text( text );
+				// add the css to the page	
+				injectStyles(); 
+				// on anchor click to to top
+				$(".anchor").click(function() {
+				    $('html, body').animate({
+				        scrollTop: $(this).offset().top
+				    }, 0);
+				});						
 			}
 		} );
 
