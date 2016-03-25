@@ -20,8 +20,9 @@ Easy creation of permalinks on your html page! [ http://codepen.io/rnjailamba/fu
 
 ## After Installation
 
-You will find the permalink.js file in node_modules/permalinkjs/dist/permalink.js
-Please include the permalink.js file after including jQuery.
+You will find the permalink.js file in node_modules/permalinkjs/dist/permalink.js.      
+Please include the permalink.js file after including jQuery.     
+Please check node_modules/permalinkjs/demo/index.html for a very easy example.
   
 ## Usage - Example 1
 
