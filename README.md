@@ -10,7 +10,7 @@
 Permalinks for your html page
 =======================================
 
-Easy creation of permalinks on your html page!
+Easy creation of permalinks on your html page! [ http://codepen.io/rnjailamba/full/eZRmXb/ ] 
 
 ## Installation
 
