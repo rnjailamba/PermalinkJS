@@ -5,7 +5,9 @@
          alt="build status">
 </a>
 [![npm downloads](https://img.shields.io/npm/dm/permalinkjs.svg?style=flat)](https://www.npmjs.com/package/permalinkjs)
+<a href="http://bower.io/search/?q=permalinkjs">
 <img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
+</a>
 Permalinks for your html page
 =======================================
 
