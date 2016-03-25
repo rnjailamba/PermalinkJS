@@ -20,15 +20,32 @@ Easy creation of permalinks on your html page!
   
 ## Usage - Example 1
 
+Just include the following script tag on your HTML page.        
+All h1,h2,h3,h4,h5,h6 elements within the element div will get permalinks now.
+
 ```
-  var PermalinkJS = require('PermalinkJS');
+  	<script>
+		$(document).ready( function() {
+			$( "#element" ).permalink( {
+				tags: "h1,h2,h3,h4,h5,h6"
+			} );
+			
+		} );
+	</script>
 
 ```
 
 ## Usage - Example 2
 
 ```
-  var PermalinkJS = require('PermalinkJS');
+  	<script>
+		$(document).ready( function() {
+			$( "#element" ).permalink( {
+				tags: "h1"
+			} );
+			
+		} );
+	</script>
 
 ```
 
