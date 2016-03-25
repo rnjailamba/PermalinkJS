@@ -1,10 +1,10 @@
-[![NPM](https://nodei.co/npm/PermalinkJS.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/PermalinkJS)
-[![npm version](https://badge.fury.io/js/PermalinkJS.svg)](https://www.npmjs.com/package/permalinkjs)
-<a href="https://www.npmjs.com/package/PermalinkJS">
+[![NPM](https://nodei.co/npm/PermalinkJS.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/permalinkjs)
+[![npm version](https://badge.fury.io/js/permalinkjs.svg)](https://www.npmjs.com/package/permalinkjs)
+<a href="https://www.npmjs.com/package/permalinkjs">
     <img src="https://img.shields.io/travis/badges/shields.svg"
          alt="build status">
 </a>
-[![npm downloads](https://img.shields.io/npm/dm/PermalinkJS.svg?style=flat)](https://www.npmjs.com/package/PermalinkJS)
+[![npm downloads](https://img.shields.io/npm/dm/permalinkjs.svg?style=flat)](https://www.npmjs.com/package/permalinkjs)
 
 
 Permalinks for your html page
