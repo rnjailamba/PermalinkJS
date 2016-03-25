@@ -1,5 +1,5 @@
 [![NPM](https://nodei.co/npm/PermalinkJS.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/PermalinkJS)
-[![npm version](https://badge.fury.io/js/PermalinkJS.svg)](https://www.npmjs.com/package/PermalinkJS)
+[![npm version](https://badge.fury.io/js/PermalinkJS.svg)](https://www.npmjs.com/package/permalinkjs)
 <a href="https://www.npmjs.com/package/PermalinkJS">
     <img src="https://img.shields.io/travis/badges/shields.svg"
          alt="build status">
