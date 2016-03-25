@@ -5,7 +5,6 @@
          alt="build status">
 </a>
 [![npm downloads](https://img.shields.io/npm/dm/permalinkjs.svg?style=flat)](https://www.npmjs.com/package/permalinkjs)
-<iframe src="//benschwarz.github.io/bower-badges/embed.html?pkgname=permalinkjs" width="160" height="32" allowtransparency="true" frameborder="0" scrolling="0"></iframe>
 
 
 Permalinks for your html page
