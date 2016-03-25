@@ -1,6 +1,6 @@
 {
   "name": "permalinkjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Easy creation of permalinks on your html page!",
   "main": "main.js",
   "dependencies": {},

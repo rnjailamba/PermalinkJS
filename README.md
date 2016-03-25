@@ -1,4 +1,4 @@
-[![NPM](https://nodei.co/npm/PermalinkJS.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/permalinkjs)
+[![NPM](https://nodei.co/npm/permalinkjs.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/permalinkjs)
 [![npm version](https://badge.fury.io/js/permalinkjs.svg)](https://www.npmjs.com/package/permalinkjs)
 <a href="https://www.npmjs.com/package/permalinkjs">
     <img src="https://img.shields.io/travis/badges/shields.svg"
@@ -15,8 +15,13 @@ Easy creation of permalinks on your html page! [ http://codepen.io/rnjailamba/fu
 ## Installation
 
 ```shell
-  npm install PermalinkJS --save
+  npm install permalinkjs --save
 ```
+
+## After Installation
+
+You will find the permalink.js file in node_modules/permalinkjs/dist/permalink.js
+Please include the permalink.js file after including jQuery.
   
 ## Usage - Example 1
 
