@@ -14,6 +14,10 @@ Permalinks for your html page
 
 Easy creation of permalinks on your html page! [**DEMOS** - http://goo.gl/Qnkn0N http://goo.gl/zEbKel] 
 
+## Requirements
+
+Just any html page with h1/h2/h3/h4/h5/h6 tags and PermalinkJS will add permalinks!
+
 ## Installation
 
 ```shell
