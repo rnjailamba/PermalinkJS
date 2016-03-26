@@ -11,7 +11,7 @@
 Permalinks for your html page
 =======================================
 
-Easy creation of permalinks on your html page! [ http://codepen.io/rnjailamba/full/eZRmXb/ ] 
+Easy creation of permalinks on your html page! [**DEMOS** - http://goo.gl/Qnkn0N http://goo.gl/zEbKel] 
 
 ## Installation
 
