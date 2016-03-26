@@ -7,7 +7,8 @@
 [![npm downloads](https://img.shields.io/npm/dm/permalinkjs.svg?style=flat)](https://www.npmjs.com/package/permalinkjs)
 <a href="http://bower.io/search/?q=permalinkjs">
 <img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
-</a>
+</a>       
+
 Permalinks for your html page
 =======================================
 
@@ -22,7 +23,7 @@ Easy creation of permalinks on your html page! [**DEMOS** - http://goo.gl/Qnkn0N
 ## After Installation
 
 You will find the permalink.js file in node_modules/permalinkjs/dist/permalink.js.      
-Please include the permalink.js file after including jQuery.     
+Please include the permalink.js file after including **jQuery**.     
 Please check node_modules/permalinkjs/demo/index.html for a very easy example.    
 Or just copy stuff from here -> https://goo.gl/LDfvWJ
   
@@ -32,28 +33,28 @@ Just include the following script tag on your HTML page.
 All h1,h2,h3,h4,h5,h6 elements within the element div will get permalinks now.
 
 ```
-  	<script>
-		$(document).ready( function() {
-			$( "#element" ).permalink( {
-				tags: "h1,h2,h3,h4,h5,h6"
-			} );
-			
+<script>
+	$(document).ready( function() {
+		$( "#element" ).permalink( {
+			tags: "h1,h2,h3,h4,h5,h6"
 		} );
-	</script>
+		
+	} );
+</script>
 
 ```
 
 ## Usage - Example 2
 
 ```
-  	<script>
-		$(document).ready( function() {
-			$( "#element" ).permalink( {
-				tags: "h1"
-			} );
-			
+<script>
+	$(document).ready( function() {
+		$( "#element" ).permalink( {
+			tags: "h1"
 		} );
-	</script>
+		
+	} );
+</script>
 
 ```
 
