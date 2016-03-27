@@ -16,7 +16,7 @@ Easy creation of permalinks on your html page! [**DEMOS** - http://goo.gl/Qnkn0N
 
 ## Requirements
 
-Just any html page with h1/h2/h3/h4/h5/h6 tags and PermalinkJS will add permalinks!
+Just any html page with h1,h2,h3,h4,h5,h6,p,a,blockquote,header,footer,ul,ol tags and PermalinkJS will add permalinks!
 
 ## Installation
 
@@ -40,7 +40,7 @@ All h1,h2,h3,h4,h5,h6 elements within the element div will get permalinks now.
 <script>
 	$(document).ready( function() {
 		$( "#element" ).permalink( {
-			tags: "h1,h2,h3,h4,h5,h6"
+			tags: "h1,h2,h3,h4,h5,h6,p,a,blockquote,header,footer,ul,ol"
 		} );
 		
 	} );
