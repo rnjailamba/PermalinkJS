@@ -14,6 +14,10 @@ Permalinks for your html page
 
 Easy creation of permalinks on your html page! [**DEMOS** - http://goo.gl/Qnkn0N http://goo.gl/zEbKel] 
 
+## Requirements
+
+Just any html page with h1/h2/h3/h4/h5/h6/p/a/blockquote/header/footer/ul/ol tags and PermalinkJS will add permalinks!
+
 ## Installation
 
 ```shell
@@ -29,14 +33,14 @@ Or just copy stuff from here -> https://goo.gl/LDfvWJ
   
 ## Usage - Example 1
 
-Just include the following script tag on your HTML page.        
-All h1,h2,h3,h4,h5,h6 elements within the element div will get permalinks now.
+Just include the following script tag on your HTML page.( after jquery and permalink.js )        
+All h1,h2,h3,h4,h5,h6,p,a,blockquote,header,footer,ul,ol elements that are direct children of the div with id="element" will get permalinks now.
 
 ```
 <script>
 	$(document).ready( function() {
 		$( "#element" ).permalink( {
-			tags: "h1,h2,h3,h4,h5,h6"
+			tags: "h1,h2,h3,h4,h5,h6,p,a,blockquote,header,footer,ul,ol"
 		} );
 		
 	} );
@@ -45,6 +49,8 @@ All h1,h2,h3,h4,h5,h6 elements within the element div will get permalinks now.
 ```
 
 ## Usage - Example 2
+
+Only h1 elements that are direct children of the div with id="element" will get permalinks now.
 
 ```
 <script>
@@ -75,3 +81,8 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 * 0.0.1 Initial release
 * 0.0.2 Initial release
 * 0.0.3 Initial release
+* 0.0.4 Initial release
+* 0.0.5 Initial release
+* 0.0.6 Initial release
+* 0.0.7 Initial release
+* 0.0.8 Initial release
